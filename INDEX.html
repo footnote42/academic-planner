@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 4px;
+      text-align: center;
+      height: 24px;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .tutorial, .lesson {
+      background-color: #e6f7ff;
+    }
+    .break {
+      background-color: #fff3e6;
+    }
+    .activity {
+      background-color: #e6ffe6;
+    }
+    .evening {
+      background-color: #f9f9f9;
+    }
+    .weekend {
+      background-color: #f0f0ff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Weekly Planner</h2>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+
+    <!-- School Hours -->
+    <tr><td class="tutorial">08:30–09:00<br>Tutorial</td><td colspan="7" class="tutorial"></td></tr>
+    <tr><td class="lesson">09:00–10:00<br>Lesson 1</td><td colspan="7" class="lesson"></td></tr>
+    <tr><td class="lesson">10:00–11:00<br>Lesson 2</td><td colspan="7" class="lesson"></td></tr>
+    <tr><td class="break">11:00–11:30<br>Break</td><td colspan="7" class="break"></td></tr>
+    <tr><td class="lesson">11:30–12:30<br>Lesson 3</td><td colspan="7" class="lesson"></td></tr>
+    <tr><td class="lesson">12:30–13:30<br>Lesson 4</td><td colspan="7" class="lesson"></td></tr>
+    <tr><td class="break">13:30–14:00<br>Break</td><td colspan="7" class="break"></td></tr>
+    <tr><td class="lesson">14:00–15:00<br>Lesson 5</td><td colspan="7" class="lesson"></td></tr>
+
+    <!-- After-school -->
+    <tr><td class="activity">15:00–16:30<br>Activity Slot</td><td colspan="7" class="activity"></td></tr>
+
+    <!-- Evening Weekdays -->
+    <!-- 30-min blocks from 16:30–21:00 -->
+    <!-- Repeat for each time slot -->
+    <!-- Weekends start at 07:00 -->
+    <!-- Generate rows dynamically -->
+    <!-- Below is a sample for 16:30–18:00 -->
+    <tr><td class="evening">16:30–17:00</td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="weekend"></td><td class="weekend"></td></tr>
+    <tr><td class="evening">17:00–17:30</td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="weekend"></td><td class="weekend"></td></tr>
+    <tr><td class="evening">17:30–18:00</td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="evening"></td><td class="weekend"></td><td class="weekend"></td></tr>
+    <!-- Continue until 21:00 -->
+    <!-- For weekends, start from 07:00–21:00 in 30-min blocks -->
+
+  </table>
+</body>
+</html>
