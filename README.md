@@ -1,6 +1,6 @@
 # 📘 Academic Planner
 
-A printable weekly planner designed for UK secondary school pupils, helping them organize school hours, after-school activities, and evening routines with clarity and flexibility.
+A printable weekly planner designed for UK secondary school pupils, helping them organize school hours, after-school activities, and evening routines with clarity and flexibility. This is an edit.
 
 ## 🗓️ Overview
 
