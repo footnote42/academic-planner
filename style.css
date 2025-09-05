@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fdfdfd;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.planner-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.planner-table th,
+.planner-table td {
+  border: 1px solid #444;
+  padding: 6px;
+  text-align: center;
+  height: 28px;
+}
+
+.planner-table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.planner-table td {
+  background-color: #fff;
+}
+
+/* Vertical dividers between days */
+.planner-table td:not(:first-child),
+.planner-table th:not(:first-child) {
+  border-left: 2px solid #999;
+}
+
+/* Optional: highlight school hours */
+.planner-table tr:nth-child(n+7):nth-child(-n+25) td {
+  background-color: #f0f8ff;
+}
+
+/* Optional: highlight evening slots */
+.planner-table tr:nth-child(n+26) td {
+  background-color: #f9f9f9;
+}
