@@ -1,3 +1,4 @@
+/* Base styling */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -23,13 +24,41 @@ h1 {
   height: 28px;
 }
 
+/* Header styling */
 .planner-table th {
   background-color: #e0e0e0;
   font-weight: bold;
 }
 
+/* Default cell background — remains white */
 .planner-table td {
-  background-color: #fff;
+  background-color: #ffffff;
+}
+
+/* Categorised activity blocks */
+.tutorial-slot {
+  background-color: #d6eaff !important; /* soft blue */
+}
+
+.walk-slot {
+  background-color: #c8eb78 !important; /* soft blue */
+}
+
+.lesson-slot {
+  background-color: #d9fdd3 !important; /* pale green */
+}
+
+.break-slot {
+  background-color: #fff4c2 !important; /* light yellow */
+}
+
+.after-slot {
+  background-color: #e6d6ff !important; /* lavender */
+}
+
+/* Optional: differentiate weekends */
+.planner-table td.weekend-slot {
+  background-color: #f5f5f5;
 }
 
 /* Vertical dividers between days */
@@ -38,12 +67,12 @@ h1 {
   border-left: 2px solid #999;
 }
 
-/* Optional: highlight school hours */
-.planner-table tr:nth-child(n+7):nth-child(-n+25) td {
-  background-color: #f0f8ff;
-}
-
-/* Optional: highlight evening slots */
-.planner-table tr:nth-child(n+26) td {
-  background-color: #f9f9f9;
+/* Optional: print-friendly tweaks */
+@media print {
+  body {
+    margin: 0;
+  }
+  .planner-table {
+    font-size: 10pt;
+  }
 }
